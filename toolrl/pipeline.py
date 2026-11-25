@@ -12,7 +12,7 @@ def run(args):
 
 
 def run_distributed(nproc, args):
-    cmd=[sys.executable,'-m','torch.distributed.run','--standalone',f'--nproc_per_node={nproc}','-m','toolrl.trainers.distributed',*map(str,args)]
+    cmd=[sys.executable,'-m','torch.distributed.run','--standalone',f'--nproc_per_node={nproc}','-m','--','toolrl.trainers.distributed',*map(str,args)]
     print('>>>', ' '.join(cmd),flush=True)
     subprocess.run(cmd,check=True)
 
