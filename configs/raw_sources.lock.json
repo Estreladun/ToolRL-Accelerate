@@ -1,0 +1,14 @@
+{
+  "toolace": {
+    "repo": "Team-ACE/ToolACE",
+    "filename": "data.json",
+    "revision": "6bda777c88d21e5a204703c1ee45597a8fa4f734",
+    "sha256": "ba12c083fca7e8da48c67ad5b895e495447da7c66e39a2e19742c082e6cb537e"
+  },
+  "xlam": {
+    "repo": "Salesforce/xlam-function-calling-60k",
+    "filename": "xlam_function_calling_60k.json",
+    "revision": "26d14ebfe18b1f7b524bd39b404b50af5dc97866",
+    "sha256": "4ef5c6f0dc552f2231f93f5853a9ef431e9e806d7aa514d0f6b615606ce576c6"
+  }
+}
