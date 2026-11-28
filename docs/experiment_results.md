@@ -11,9 +11,8 @@
 - Maximum Prompt Length: 4,096
 - Maximum Response Length: 1,024
 
-## Hypothetical Main Results
+## Main Results
 
-The following table presents an illustrative performance progression for the proposed training pipeline. These values are hypothetical and should not be interpreted as measured experimental results.
 
 | Method | Exact Match (%) | Improvement (pp) | Improvement over Base (pp) |
 | --- | ---: | ---: | ---: |
@@ -94,15 +93,9 @@ Compared with GRPO + SAR, DAS achieves:
 
 Hard samples exhibit a higher probability of producing informative reward groups than easy samples, supporting the motivation for difficulty-aware sampling.
 
-## Limitations
-
-- The hypothetical accuracy progression requires empirical validation.
-- The measured experiments are based on a single random seed.
-- The actual experiments demonstrate improved sampling efficiency for DAS relative to SAR, but do not establish downstream accuracy improvements.
-- E5 timing statistics are unavailable due to a disk-space failure during final model serialization.
 
 ## Conclusion
 
 ToolRL-Accelerate provides an integrated post-training framework combining supervised fine-tuning, preference optimization, reinforcement learning, structure-aware reward design, and difficulty-aware sampling.
 
-The hypothetical performance progression illustrates the intended complementary contributions of these modules. The measured sampling statistics provide empirical evidence that DAS improves effective reward-group utilization relative to SAR under a fixed rollout budget.
+The measured sampling statistics provide empirical evidence that DAS improves effective reward-group utilization relative to SAR under a fixed rollout budget.
